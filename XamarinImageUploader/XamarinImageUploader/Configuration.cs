@@ -23,6 +23,9 @@ namespace XamarinImageUploader
 {
     public static class Configuration
     {
+        /// <summary>
+        /// Azure Storage Connection String. UseDevelopmentStorage=true points to the storage emulator.
+        /// </summary>
         public const string StorageConnectionString = "UseDevelopmentStorage=true";
     }
 }
