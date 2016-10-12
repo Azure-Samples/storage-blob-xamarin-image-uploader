@@ -4,11 +4,11 @@ platforms: xamarin
 author: pcibraro
 ---
 
-# Azure Storage Service - Photo Uploader Samples for iOS
+# Azure Storage Service - Photo Uploader Sample using Xamarin for Android, iOS and Windows.
 
 This sample demostrates how to upload photo images from the gallery in Android, iOS and Windows Phone into a Block blob in Azure Storage with Xamarin. It shows a button "Select Image" to select 
 an image from the gallery, a button "Upload Image" to upload it to the Azure Storage, a button "List images" to list all the uploaded images.
-A Shared Native Library is used for reusing all the common code for the platform specific projects.
+A Shared Asset Project is used for reusing all the common code for the platform specific projects.
 
 Note: This sample uses the Windows Azure Storage client library for .NET available through a Nuget package.
 
