@@ -32,6 +32,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
+using Windows.Phone.UI.Input;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -52,6 +53,7 @@ namespace XamarinImageUploader.WinPhone
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+            HardwareButtons.BackPressed += HardwareButtons_BackPressed;
         }
 
         /// <summary>
@@ -128,6 +130,22 @@ namespace XamarinImageUploader.WinPhone
             var rootFrame = sender as Frame;
             rootFrame.ContentTransitions = this.transitions ?? new TransitionCollection() { new NavigationThemeTransition() };
             rootFrame.Navigated -= this.RootFrame_FirstNavigated;
+        }
+
+        /// <summary>
+        /// Responds to the hardware back button
+        /// </summary>
+        /// <param name="sender">The object where the handler is attached.</param>
+        /// <param name="e">Details about the back press event.</param>
+        void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+
+            if (rootFrame != null && rootFrame.CanGoBack)
+            {
+                e.Handled = true;
+                rootFrame.GoBack();
+            }
         }
 
         /// <summary>
