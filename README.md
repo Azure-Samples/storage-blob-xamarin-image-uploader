@@ -30,9 +30,7 @@ To run the sample using the Storage Service
 2. Create a Storage Account through the Azure Portal and provide your [AccountName] and [AccountKey] in the StorageConnectionString variable.
 3. Set breakpoints and run the project using F10.
 
-<aside class="warning">
-Content
-</aside> 
+<span style="color:red">some **This is Red Bold.** text</span>
 
 
 Note: You can also run the sample with Xamarin Studio, but only the Android and iOS samples will be available. For the Windows Phone sample, you can only use Visual Studio.
