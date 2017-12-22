@@ -30,10 +30,8 @@ To run the sample using the Storage Service
 2. Create a Storage Account through the Azure Portal and provide your [AccountName] and [AccountKey] in the StorageConnectionString variable.
 3. Set breakpoints and run the project using F10.
 
-> [!WARNING] 
-> **Only use Shared Key authentication for testing purposes!** Your account name and account key, which give full read/write access to the associated Storage account, will be distributed to every person that downloads your app. This is **not** a good practice as you risk having your key compromised by untrusted clients. Please consult following documents to understand and use Shared Access Signatures instead. https://docs.microsoft.com/en-us/rest/api/storageservices/delegating-access-with-a-shared-access-signature and https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1
-> 
-> 
+<span style="color:red">some **This is Red Bold.** text</span>
+
 
 Note: You can also run the sample with Xamarin Studio, but only the Android and iOS samples will be available. For the Windows Phone sample, you can only use Visual Studio.
 
