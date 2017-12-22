@@ -30,10 +30,8 @@ To run the sample using the Storage Service
 2. Create a Storage Account through the Azure Portal and provide your [AccountName] and [AccountKey] in the StorageConnectionString variable.
 3. Set breakpoints and run the project using F10.
 
-<div class="WARNING">
-  <h5>WARNING</h5>
-  <p>WARNING content</p>
-</div>
+>[!IMPORTANT]
+>Test
 
 
 Note: You can also run the sample with Xamarin Studio, but only the Android and iOS samples will be available. For the Windows Phone sample, you can only use Visual Studio.
